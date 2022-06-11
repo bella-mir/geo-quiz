@@ -1,0 +1,13 @@
+.title__container{
+    display: flex;
+    align-items: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.title__name{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px
+}

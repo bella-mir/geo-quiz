@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { selectedRegions } from "./constants";
+import "./Quiz.css"
+
 
 export default function Quiz(props) {
   const [currentQuestion, setCurrentQuestion] = useState(-1);
@@ -28,22 +30,17 @@ export default function Quiz(props) {
   }, [props.answer]);
 
   return (
-    <div className="app">
+    <div className="quiz">
       {showScore ? (
         <div className="score-section">
           You scored {score} out of {selectedRegions.length}
-          <button onClick={handleResetButtonClick}>Reset score</button>
+          <button className="quiz__play" onClick={handleResetButtonClick}>Play again</button>
         </div>
       ) : (
         <>
           <div className="question-section">
-            <div className="question-count">
-              <span>Where is {selectedRegions[currentQuestion]}</span>
+              <span>{selectedRegions[currentQuestion]} ({currentQuestion + 1}/{selectedRegions.length})</span>
             </div>
-            <div className="question-text">
-              {currentQuestion + 1}/ {selectedRegions.length}
-            </div>
-          </div>
         </>
       )}
     </div>

@@ -13,6 +13,8 @@ import "proj4leaflet";
 import "proj4";
 import russia from "../data/rus_regions_2.json";
 import Quiz from "./Quiz";
+import "./Map.css"
+import Title from "./Title";
 
 const RussiaMap = () => {
   let [answer, SetAnswer] = useState(null);
@@ -22,8 +24,8 @@ const RussiaMap = () => {
     if (selected == null || selected._leaflet_id !== layer._leaflet_id) {
       layer.setStyle({
         weight: 1.5,
-        dashArray: "",
-        fillOpacity: 0.9,
+        opacity: 1,
+        fillOpacity: 0.1,
       });
       if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
@@ -59,6 +61,14 @@ const RussiaMap = () => {
     });
   };
 
+  const basemapStyle2 = {
+      weight: 1.5,
+      Opacity: 1,
+      fillColor: "#FFFFFF",
+      fillOpacity: 1,
+      color: "#DAE0F2"
+  };
+
   const crs = new L.Proj.CRS(
     "EPSG:3576",
     "+proj=laea +lat_0=90 +lon_0=90 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",
@@ -88,13 +98,14 @@ const RussiaMap = () => {
       >
         <GeoJSON
           data={russia}
+          style={basemapStyle2}
           onEachFeature={onEachFeatureF}
           ref={geoJsonRef}
         />
+        <Title>RUSSIAN REGIONS GEO-QUIZ</Title>
         <Quiz answer={answer}/>
 
         <ScaleControl position="bottomleft" />
-        <ZoomControl position="bottomleft" />
       </MapContainer>
     </>
   );
