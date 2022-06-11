@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import RussiaMap from './components/Map';
 
 function App() {
   return (
     <div className="App">
-      <h1>Geo Quiz</h1>
+      <RussiaMap/>
     </div>
   );
 }
