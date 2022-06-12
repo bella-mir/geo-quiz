@@ -2,6 +2,8 @@
 
 ## Simple example of a geagraphy quiz built with React
 
+[Github Pages](https://belka-mironova.github.io/geo-quiz)
+
 ### Installation
 
 1. Clone the repo
