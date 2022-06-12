@@ -14,7 +14,6 @@ import "proj4";
 import russia from "../data/rus_regions_2.json";
 import Quiz from "./Quiz";
 import "./Map.css"
-import Title from "./Title";
 
 const RussiaMap = () => {
   let [answer, SetAnswer] = useState(null);
@@ -87,14 +86,11 @@ const RussiaMap = () => {
         style={{ height: "100vh" }}
         zoomControl={false}
         zoom={2}
-        center={[65, 130]}
+        center={[70, 90]}
         minZoom={2}
-        maxZoom={5}
+        maxZoom={2}
         crs={crs}
-        maxBounds={[
-          [20, 75],
-          [870, 2000],
-        ]}
+    
       >
         <GeoJSON
           data={russia}
@@ -102,7 +98,6 @@ const RussiaMap = () => {
           onEachFeature={onEachFeatureF}
           ref={geoJsonRef}
         />
-        <Title>RUSSIAN REGIONS GEO-QUIZ</Title>
         <Quiz answer={answer}/>
 
         <ScaleControl position="bottomleft" />

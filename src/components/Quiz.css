@@ -1,28 +1,45 @@
 .quiz{
     display: flex;
     align-items: left;
-    margin-left: 50px;
+    flex-direction: column;
+    margin-left: 5%;
     color: white;
     font-size: 30px;
     font-weight: 700;
+    text-align: left;
 }
 
 .quiz__play{
     font-size: 30px;
+    width: 250px;
     font-weight: 700;
     color: #1B64D1;
     background-color: #ffffff;
-    border-radius: 5px;
-    display: flex;
+    border-radius: 10px;
     padding: 5px;
     margin-top: 20px;
     border: 2px solid #E6E2DF;
     cursor: pointer;
   }
 
+  .question-section{
+    text-align: left;
+  }
+
   .quiz__play:hover{
     color: #ffffff;
     background-color: #1B64D1;
-
-
   }
+
+  .title__container{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.title__name{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
