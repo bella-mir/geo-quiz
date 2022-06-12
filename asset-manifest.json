@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.65ab61f7.css",
-    "main.js": "/static/js/main.ff672872.js",
-    "static/js/787.16e39cf2.chunk.js": "/static/js/787.16e39cf2.chunk.js",
-    "index.html": "/index.html",
-    "main.65ab61f7.css.map": "/static/css/main.65ab61f7.css.map",
-    "main.ff672872.js.map": "/static/js/main.ff672872.js.map",
-    "787.16e39cf2.chunk.js.map": "/static/js/787.16e39cf2.chunk.js.map"
+    "main.css": "/geo-quiz/static/css/main.127308af.css",
+    "main.js": "/geo-quiz/static/js/main.e26590a7.js",
+    "static/js/787.16e39cf2.chunk.js": "/geo-quiz/static/js/787.16e39cf2.chunk.js",
+    "index.html": "/geo-quiz/index.html",
+    "main.127308af.css.map": "/geo-quiz/static/css/main.127308af.css.map",
+    "main.e26590a7.js.map": "/geo-quiz/static/js/main.e26590a7.js.map",
+    "787.16e39cf2.chunk.js.map": "/geo-quiz/static/js/787.16e39cf2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65ab61f7.css",
-    "static/js/main.ff672872.js"
+    "static/css/main.127308af.css",
+    "static/js/main.e26590a7.js"
   ]
 }
