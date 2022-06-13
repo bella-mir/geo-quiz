@@ -8,7 +8,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/belka-mironova/mesto-react.git
+   git clone https://github.com/belka-mironova/geo-quiz.git
    ```
 2. Install NPM packages
    ```sh
